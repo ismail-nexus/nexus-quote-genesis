@@ -70,7 +70,7 @@ const ServicesTable = () => {
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
             {services.map((service, index) => (
-              <tr key={index} className="hover:bg-gray-50 transition-colors">
+              <tr key={index} className="hover:bg-gray-50 transition-colors service-row">
                 <td className="px-6 py-6 align-top">
                   <div className="font-semibold text-gray-900">{service.category}</div>
                 </td>

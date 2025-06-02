@@ -1,17 +1,12 @@
 
-import { Shield, Clock, CreditCard, Wrench, Plus, Calendar } from "lucide-react";
+import { Clock, CreditCard, Wrench, Plus, Calendar, Award } from "lucide-react";
 
 const TermsAndConditions = () => {
   const terms = [
     {
-      icon: Shield,
-      title: "Tax Information",
-      description: "Costs are exclusive of applicable taxes (GST @ 18% will be added)."
-    },
-    {
       icon: Clock,
       title: "Project Timeline",
-      description: "Approximately 8-10 weeks from confirmation."
+      description: "Approximately 8-10 weeks from confirmation and project initiation."
     },
     {
       icon: CreditCard,
@@ -31,7 +26,12 @@ const TermsAndConditions = () => {
     {
       icon: Calendar,
       title: "Quotation Validity",
-      description: "Quotation is valid for 30 days from the issue date."
+      description: "This quotation is valid for 30 days from the issue date."
+    },
+    {
+      icon: Award,
+      title: "Quality Assurance",
+      description: "All deliverables will undergo thorough testing and quality checks before final delivery."
     }
   ];
 

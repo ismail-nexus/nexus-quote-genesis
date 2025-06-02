@@ -1,5 +1,5 @@
 
-import { Building2, Globe, Mail, Phone, MapPin } from "lucide-react";
+import { Building2, Globe, Mail, Phone } from "lucide-react";
 
 const QuotationHeader = () => {
   return (
@@ -24,10 +24,6 @@ const QuotationHeader = () => {
           <div className="flex items-center justify-end gap-2">
             <Phone className="h-4 w-4" />
             <span>+91-7032229659</span>
-          </div>
-          <div className="flex items-center justify-end gap-2">
-            <MapPin className="h-4 w-4" />
-            <span>123 Business Avenue, Tech City, India</span>
           </div>
         </div>
       </div>

@@ -102,12 +102,6 @@ const ServicesTable = () => {
           </tfoot>
         </table>
       </div>
-
-      <div className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-        <p className="text-sm text-yellow-800">
-          <strong>Note:</strong> All costs are exclusive of applicable taxes. GST @ 18% will be added to the final invoice.
-        </p>
-      </div>
     </div>
   );
 };

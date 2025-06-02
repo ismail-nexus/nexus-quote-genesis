@@ -8,14 +8,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8">
       <div className="max-w-5xl mx-auto px-4">
-        <div className="bg-white shadow-2xl rounded-lg overflow-hidden">
+        <div className="bg-white shadow-2xl rounded-lg overflow-hidden print-container">
           <QuotationHeader />
           <QuotationDetails />
           <ServicesTable />
           <TermsAndConditions />
         </div>
         
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center print-button no-print">
           <button 
             onClick={() => window.print()} 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"

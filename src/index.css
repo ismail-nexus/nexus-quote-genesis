@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,107 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .print-button {
+    display: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-container {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .print-page {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .print-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .print-break-after {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .print-avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ensure good spacing for print */
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  /* Make sure colors print correctly */
+  .bg-blue-900, .bg-blue-700 {
+    background-color: #1e3a8a !important;
+  }
+
+  .bg-blue-50 {
+    background-color: #eff6ff !important;
+  }
+
+  .bg-gray-50 {
+    background-color: #f9fafb !important;
+  }
+
+  .text-blue-600 {
+    color: #2563eb !important;
+  }
+
+  .text-white {
+    color: white !important;
+  }
+
+  .border {
+    border: 1px solid #d1d5db !important;
+  }
+
+  .border-gray-200 {
+    border-color: #e5e7eb !important;
+  }
+
+  .divide-y > * + * {
+    border-top: 1px solid #e5e7eb !important;
   }
 }

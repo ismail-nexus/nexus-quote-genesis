@@ -5,7 +5,7 @@ const ServicesTable = () => {
   const services = [
     {
       category: "Frontend Development",
-      price: "₹35,000",
+      price: "₹32,000",
       features: [
         "Custom-designed, responsive homepage with modern UI/UX",
         "Interactive product listing page with filtering and sorting",
@@ -17,7 +17,7 @@ const ServicesTable = () => {
     },
     {
       category: "Backend Development",
-      price: "₹28,000",
+      price: "₹25,000",
       features: [
         "Robust database setup for products, orders, and customer data",
         "Efficient order flow management with status tracking",
@@ -27,7 +27,7 @@ const ServicesTable = () => {
     },
     {
       category: "Admin Panel",
-      price: "₹30,000",
+      price: "₹28,000",
       features: [
         "Secure admin login with two-factor authentication",
         "Comprehensive product management (add/edit/delete 1000+ products)",
@@ -37,7 +37,7 @@ const ServicesTable = () => {
     },
     {
       category: "Payment Gateway Integration",
-      price: "₹15,000",
+      price: "₹12,000",
       features: [
         "Cash on Delivery (COD) with order verification",
         "Secure card payment integration via Razorpay",
@@ -46,7 +46,7 @@ const ServicesTable = () => {
     },
     {
       category: "Domain & Hosting Setup",
-      price: "₹5,000",
+      price: "₹3,000",
       features: [
         "Domain purchase and DNS configuration",
         "Hosting setup with optimized platforms (Vercel, Hostinger, or equivalent)",
@@ -54,10 +54,6 @@ const ServicesTable = () => {
       ]
     }
   ];
-
-  const subtotal = 113000;
-  const discount = 15000;
-  const finalTotal = 98000;
 
   return (
     <div className="p-6">
@@ -94,29 +90,13 @@ const ServicesTable = () => {
               </tr>
             ))}
           </tbody>
-          <tfoot className="bg-gray-50">
+          <tfoot className="bg-blue-50">
             <tr>
-              <td colSpan={2} className="px-6 py-4 text-right font-semibold text-gray-700">
-                Subtotal:
-              </td>
-              <td className="px-6 py-4 text-right">
-                <span className="text-lg font-semibold text-gray-900">₹{subtotal.toLocaleString()}</span>
-              </td>
-            </tr>
-            <tr>
-              <td colSpan={2} className="px-6 py-4 text-right font-semibold text-green-700">
-                Early Bird Discount (13%):
-              </td>
-              <td className="px-6 py-4 text-right">
-                <span className="text-lg font-semibold text-green-600">-₹{discount.toLocaleString()}</span>
-              </td>
-            </tr>
-            <tr className="bg-blue-50">
               <td colSpan={2} className="px-6 py-4 text-right font-bold text-lg text-gray-900">
                 Total Project Cost:
               </td>
               <td className="px-6 py-4 text-right">
-                <span className="text-2xl font-bold text-blue-600">₹{finalTotal.toLocaleString()}</span>
+                <span className="text-2xl font-bold text-blue-600">₹98,000</span>
               </td>
             </tr>
           </tfoot>
